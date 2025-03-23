@@ -16,6 +16,10 @@
 /api/index.js
 /api/index.js.map
 /app/styles/tailwind.css
+.netlify
+.vercel
+.remix
+/server-build
 
 # Environment variables
 .env
@@ -57,3 +61,15 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Temporary files
+*.swp
+*.swo
+*~
+.temp
+.tmp
+
+# Vite specific
+/.vite
+/vite.config.js.timestamp-*
+/vite.config.ts.timestamp-*
