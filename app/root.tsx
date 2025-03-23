@@ -23,6 +23,9 @@ export const links: LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap",
   },
+  { rel: "icon", href: "/favicon.ico" },
+  { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+  { rel: "apple-touch-icon-precomposed", href: "/apple-touch-icon-precomposed.png" },
 ];
 
 export default function App() {
