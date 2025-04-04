@@ -69,7 +69,7 @@ export default function Friends() {
           <input
             type="text"
             placeholder="Search users..."
-            className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            className="shadow-sm focus:ring-primary-500 focus:border-primary-500 block w-full sm:text-sm border-gray-300 rounded-md"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -88,7 +88,7 @@ export default function Friends() {
               onClick={() => setActiveTab("friends")}
               className={`${
                 activeTab === "friends"
-                  ? "border-blue-500 text-blue-600"
+                  ? "border-primary-500 text-primary-600"
                   : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
               } w-1/3 py-4 px-1 text-center border-b-2 font-medium text-sm`}
             >
@@ -98,13 +98,13 @@ export default function Friends() {
               onClick={() => setActiveTab("requests")}
               className={`${
                 activeTab === "requests"
-                  ? "border-blue-500 text-blue-600"
+                  ? "border-primary-500 text-primary-600"
                   : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
               } w-1/3 py-4 px-1 text-center border-b-2 font-medium text-sm`}
             >
               Friend Requests
               {MOCK_FRIEND_REQUESTS.length > 0 && (
-                <span className="ml-2 bg-blue-100 text-blue-600 py-0.5 px-2 rounded-full text-xs">
+                <span className="ml-2 bg-primary-100 text-primary-600 py-0.5 px-2 rounded-full text-xs">
                   {MOCK_FRIEND_REQUESTS.length}
                 </span>
               )}
@@ -113,7 +113,7 @@ export default function Friends() {
               onClick={() => setActiveTab("find")}
               className={`${
                 activeTab === "find"
-                  ? "border-blue-500 text-blue-600"
+                  ? "border-primary-500 text-primary-600"
                   : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
               } w-1/3 py-4 px-1 text-center border-b-2 font-medium text-sm`}
             >
@@ -147,7 +147,7 @@ export default function Friends() {
                     <span className="text-sm text-gray-500">
                       {friend.events} upcoming {friend.events === 1 ? "event" : "events"}
                     </span>
-                    <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                    <button className="text-primary-600 hover:text-primary-800 text-sm font-medium">
                       View Calendar
                     </button>
                     <div className="relative">
@@ -183,10 +183,10 @@ export default function Friends() {
                     </div>
                   </div>
                   <div className="flex space-x-2">
-                    <button className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <button className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                       Accept
                     </button>
-                    <button className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-xs font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <button className="inline-flex items-center px-3 py-1.5 border border-gray-300 text-xs font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                       Decline
                     </button>
                   </div>
