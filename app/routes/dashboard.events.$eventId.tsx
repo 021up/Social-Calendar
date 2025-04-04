@@ -56,7 +56,7 @@ export default function EventDetails() {
         <div className="flex space-x-2">
           <Link
             to={`/dashboard/events/${eventId}/edit`}
-            className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
           >
             Edit
           </Link>
@@ -88,7 +88,7 @@ export default function EventDetails() {
               </span>
               <span className={`ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
                 event.visibility === "private" ? "bg-gray-100 text-gray-800" :
-                event.visibility === "friends" ? "bg-blue-100 text-blue-800" :
+                event.visibility === "friends" ? "bg-primary-100 text-primary-800" :
                 "bg-green-100 text-green-800"
               }`}>
                 {event.visibility}
@@ -177,14 +177,14 @@ export default function EventDetails() {
                       id="comment"
                       name="comment"
                       rows={3}
-                      className="shadow-sm block w-full focus:ring-blue-500 focus:border-blue-500 sm:text-sm border border-gray-300 rounded-md"
+                      className="shadow-sm block w-full focus:ring-primary-500 focus:border-primary-500 sm:text-sm border border-gray-300 rounded-md"
                       placeholder="Add a comment..."
                     ></textarea>
                   </div>
                   <div className="mt-3 flex items-center justify-end">
                     <button
                       type="submit"
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                     >
                       Comment
                     </button>

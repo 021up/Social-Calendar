@@ -10,10 +10,10 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-5xl font-bold text-blue-600 mb-6">Social Calendar</h1>
+          <h1 className="text-5xl font-bold text-primary-600 mb-6">Social Calendar</h1>
           <p className="text-xl text-gray-600 max-w-2xl mb-10">
             Manage your personal events, discover friends' schedules, and share activities with your social circle.
           </p>
@@ -21,13 +21,13 @@ export default function Index() {
           <div className="flex gap-4 mb-12">
             <Link 
               to="/login" 
-              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
             >
               Log In
             </Link>
             <Link 
               to="/signup" 
-              className="px-6 py-3 bg-white text-blue-600 font-medium rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors"
+              className="px-6 py-3 bg-white text-primary-600 font-medium rounded-lg border border-primary-600 hover:bg-primary-50 transition-colors"
             >
               Sign Up
             </Link>

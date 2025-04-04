@@ -65,7 +65,7 @@ export default function Profile() {
                     name="name"
                     id="name"
                     defaultValue={user.name}
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   />
                 </div>
 
@@ -96,7 +96,7 @@ export default function Profile() {
                     name="email"
                     id="email"
                     defaultValue={user.email}
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   />
                 </div>
 
@@ -134,7 +134,7 @@ export default function Profile() {
                           name="friendRequests"
                           type="checkbox"
                           defaultChecked={user.notificationSettings.friendRequests}
-                          className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                          className="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded"
                         />
                       </div>
                       <div className="ml-3 text-sm">
@@ -151,7 +151,7 @@ export default function Profile() {
                           name="eventInvites"
                           type="checkbox"
                           defaultChecked={user.notificationSettings.eventInvites}
-                          className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                          className="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded"
                         />
                       </div>
                       <div className="ml-3 text-sm">
@@ -168,7 +168,7 @@ export default function Profile() {
                           name="eventUpdates"
                           type="checkbox"
                           defaultChecked={user.notificationSettings.eventUpdates}
-                          className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                          className="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded"
                         />
                       </div>
                       <div className="ml-3 text-sm">
@@ -185,7 +185,7 @@ export default function Profile() {
                           name="eventReminders"
                           type="checkbox"
                           defaultChecked={user.notificationSettings.eventReminders}
-                          className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                          className="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded"
                         />
                       </div>
                       <div className="ml-3 text-sm">
@@ -214,7 +214,7 @@ export default function Profile() {
                     type="password"
                     name="currentPassword"
                     id="currentPassword"
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   />
                 </div>
 
@@ -226,7 +226,7 @@ export default function Profile() {
                     type="password"
                     name="newPassword"
                     id="newPassword"
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   />
                 </div>
 
@@ -238,7 +238,7 @@ export default function Profile() {
                     type="password"
                     name="confirmPassword"
                     id="confirmPassword"
-                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                    className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm"
                   />
                 </div>
               </div>

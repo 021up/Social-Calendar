@@ -1,5 +1,11 @@
 import { Link, Outlet } from "@remix-run/react";
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/node";
+import { requireAuth } from "~/utils/supabase.server";
+
+export async function loader({ request }: LoaderFunctionArgs) {
+  // Protect all dashboard routes
+  return await requireAuth(request);
+}
 
 export const meta: MetaFunction = () => {
   return [{ title: "Dashboard - Social Calendar" }];
@@ -13,14 +19,14 @@ export default function Dashboard() {
           <div className="flex justify-between h-16">
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
-                <Link to="/dashboard" className="text-xl font-bold text-blue-600">
+                <Link to="/dashboard" className="text-xl font-bold text-primary-600">
                   Social Calendar
                 </Link>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                 <Link
                   to="/dashboard"
-                  className="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  className="border-primary-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >
                   Calendar
                 </Link>
@@ -49,13 +55,13 @@ export default function Dashboard() {
                 <div>
                   <button
                     type="button"
-                    className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                     id="user-menu-button"
                     aria-expanded="false"
                     aria-haspopup="true"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                    <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600">
                       U
                     </div>
                   </button>
@@ -65,7 +71,7 @@ export default function Dashboard() {
             <div className="-mr-2 flex items-center sm:hidden">
               <button
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -94,7 +100,7 @@ export default function Dashboard() {
           <div className="pt-2 pb-3 space-y-1">
             <Link
               to="/dashboard"
-              className="bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+              className="bg-primary-50 border-primary-500 text-primary-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
             >
               Calendar
             </Link>

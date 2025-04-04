@@ -93,7 +93,7 @@ export default function Discover() {
           <input
             type="text"
             placeholder="Search events..."
-            className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
+            className="shadow-sm focus:ring-primary-500 focus:border-primary-500 block w-full sm:text-sm border-gray-300 rounded-md"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -111,7 +111,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("all")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "all"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -121,7 +121,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("technology")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "technology"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -131,7 +131,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("music")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "music"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -141,7 +141,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("sports")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "sports"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -151,7 +151,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("arts")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "arts"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -161,7 +161,7 @@ export default function Discover() {
             onClick={() => setSelectedCategory("food")}
             className={`px-4 py-2 rounded-full text-sm font-medium ${
               selectedCategory === "food"
-                ? "bg-blue-100 text-blue-800"
+                ? "bg-primary-100 text-primary-800"
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
@@ -207,15 +207,15 @@ export default function Discover() {
                 {event.attendees} attending
               </div>
               <div className="mt-4">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-100 text-primary-800">
                   {event.category}
                 </span>
               </div>
               <div className="mt-5 flex justify-between">
-                <button className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <button className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                   View Details
                 </button>
-                <button className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <button className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
                   Join Event
                 </button>
               </div>

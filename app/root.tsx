@@ -9,6 +9,7 @@ import {
   isRouteErrorResponse,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import { AuthProvider } from "~/context/auth.context";
 
 import "./tailwind.css";
 
@@ -38,7 +39,9 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Outlet />
+        <AuthProvider>
+          <Outlet />
+        </AuthProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
@@ -72,7 +75,7 @@ export function ErrorBoundary() {
           <div className="p-8 bg-white shadow-lg rounded-lg max-w-md w-full">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Error</h1>
             <p className="text-gray-700 mb-4">{message}</p>
-            <a href="/" className="text-blue-600 hover:underline">
+            <a href="/" className="text-primary-600 hover:underline">
               Return to home page
             </a>
           </div>
